@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include('./layout/head'); %>
+    </head>
+<body>
+   <header>
+    <% include('./layout/header'), %>
+   </header> 
+
+
+
+   
+    
+   
+   
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    
+    <!-- ***** Header Area End ***** -->
+
+   
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Men Area Starts ***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Men's Latest</h2>
+                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <% data.forEach(function(item){%>
+       
+            <div class="gcontainer">
+                <div id="one">
+                    <img  class="niga" style="color:red" src="images/<%= item.sawir %>" alt="">
+                    <div id="text">
+                        <span>product Name</span>  <br>
+                        <span>price</span>
+                   </div>
+                </div>
+                
+           
+          </div>
+          <%})%>
+        
+    </section>
+   
+   <footer>
+    <%-  include('./layout/footer'); %>
+
+   </footer> 
+        
+
+        
+
+    
+</body>
+</html>

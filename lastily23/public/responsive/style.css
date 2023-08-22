@@ -1,0 +1,86 @@
+.gcontainer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   column-gap: 10px;
+}
+.gcontainer > div{
+    padding: 20px;
+    background-color: blue;
+    column-gap: 5px;
+    border: solid red 2px;
+}
+.gcontainer > div > img{
+    width: 100%;
+}
+#text{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width:900px) {
+    .gcontainer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto auto;
+       column-gap: 10px;
+    }
+    .gcontainer > div{
+        padding: 20px;
+        background-color: blue;
+        column-gap: 5px;
+        border: solid red 2px;
+    }
+    .gcontainer > div > img{
+        width: 100%;
+    }
+    #text{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    
+}
+@media (max-width:900px) {
+    .gcontainer{
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto ;
+       column-gap: 10px;
+    }
+    .gcontainer > div{
+        padding: 20px;
+        background-color: blue;
+        column-gap: 5px;
+        border: solid red 2px;
+    }
+    .gcontainer > div > img{
+        width: 100%;
+    }
+    #text{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    
+}
+@media (max-width:600px) {
+    .gcontainer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #one{
+        grid-row-start: 1;
+        grid-column-end: 2;
+    }
+    #two{
+        grid-row-start: 2;
+        grid-column-end: 2;
+    }
+    #three{
+        grid-row-start: 3;
+        grid-column-end: 2;
+    }
+    
+}
